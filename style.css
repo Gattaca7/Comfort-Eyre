@@ -86,12 +86,10 @@ header {
   }
   
   .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    align-content: center;
+    color: white;
     text-align: center;
-    color: #fff;
   }
   
   .overlay h2 {
@@ -197,5 +195,17 @@ header {
     .overlay p {
       font-size: 12px;
     }
-  }
+
+    header{
+        height: 20vh;
+    }
+
+    #content{
+        top: 20vh;
+    }
+
+    header nav ul li a {
+        font-size: 20px; /* Increase the font size for mobile devices */
+        }
+      }
 
