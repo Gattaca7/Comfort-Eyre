@@ -208,12 +208,11 @@ header {
     }
 
     header{
-        height: 20vh;
+        height: 18vh;
     }
 
     #content{
-        top: 20vh;
-        height: 65vh;
+        top: 18vh;
     }
 
     header nav ul li a {
