@@ -92,7 +92,7 @@ body {
     font-size: 1.8rem; /* 1.8 times the root font size */
   }
 
-  @media only screen and (max-width: 900 px) {
+  @media only screen and (max-width: 900px) {
     /* Adjust font sizes for mobile */
     html {
       font-size: 16px;
