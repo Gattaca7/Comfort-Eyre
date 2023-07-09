@@ -9,13 +9,13 @@ body {
   }
 
 header {
-    background-color: #4e79b1; /* Dark blue color */
+    background-color: #4c89da; /* Dark blue color */
     color: #ffffff;
     padding: 10px;
     content: center;
     display: flex;
     top: 0;
-    height: 15vh;
+    height: 12vh;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -74,7 +74,7 @@ header {
     position: relative;
     padding: 0;
     margin: 0;
-    top: 15vh;
+    top: 14vh;
     height: 75vh;
     position: fixed;
   }
@@ -101,6 +101,10 @@ header {
     font-size: 2.5rem; /* 2.5 times the root font size */
     font-weight: bold;
   }
+
+  #services h2 {
+    text-align: center;
+  }
   
   .overlay p {
     font-size: 1.8rem; /* 1.8 times the root font size */
@@ -112,8 +116,8 @@ header {
     bottom: 0;
     width: 100%;
     color: #f2f2f2;
-    background-color: #4e79b1;
-    padding: 20px;
+    background-color: #4c89da;
+    padding: 12px;
     text-align: center;
   }
   
@@ -165,12 +169,45 @@ header {
     font-size: 12px;
   }
   
-  #form {
-    padding-top: 20px;
-    margin: 0;
-    min-height: 100vh;
+  .logoimage {
+    width: 30vh;
+  }
+
+  .centered-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 70vw;
+    max-width: 600px;
+  }
+    
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
   
   @media (min-width: 900px) {
@@ -187,7 +224,7 @@ header {
     }
   }
   
-  @media (max-width: 899px) and (max-height: 1500px) {
+  @media (max-width: 600px) and (max-height: 1500px) {
     /* Adjust font sizes for mobile */
     html {
       font-size: 12px;
@@ -195,7 +232,7 @@ header {
 
     .titleimage {
         content: url('Long_Image.jpg');
-        width: 899px;
+        width: 600px;
         align-content: center;
       }
   
@@ -207,16 +244,32 @@ header {
       font-size: 1.8rem;
     }
 
+    .logoimage {
+      width: 70vw;
+      padding-bottom: 15px;
+    }
+
+    .overlay {
+      width: 70%
+    }
+
     header{
-        height: 18vh;
+        height: 36vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     #content{
-        top: 18vh;
+        top: 36vw;
     }
 
     header nav ul li a {
-        font-size: 1.9rem; /* Increase the font size for mobile devices */
+      font-size: 1.7rem; /* Increase the font size for mobile devices */
+    }
+
+    #services h2 {
+      text-align: center;
     }
 }
 

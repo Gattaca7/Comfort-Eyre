@@ -4,44 +4,10 @@
   <title>Contact Us - Comfort Eyre</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <style>
-    
-    form {
-      max-width: 400px;
-      margin: auto;
-    }
-
-    input[type="text"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #000000;
-      border-radius: 4px;
-    }
-
-    textarea {
-      height: 150px;
-    }
-
-    input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    footer {
-      padding: 10px;
-      margin-top: auto;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Comfort Eyre - Heating and Cooling Solutions</h1>
+    <img src="Logo_Comfort.png" alt="Logo Image" class="logoimage">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -52,22 +18,30 @@
     </nav>
   </header>
 
-  <form action="mailto:sjohnston@plces.com.au" method="post" enctype="text/plain">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
+  <form class="centered-form" action="mailto:sjohnston@plces.com.au" method="post" enctype="text/plain">
+    <h2>Contact</h2>
+    <div class="form-row">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+  
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+    </div>
+  
+    <div class="form-row">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+  
     <input type="submit" value="Submit">
   </form>
-
+  
   <footer>
     <p>&copy; 2023 Comfort Eyre. All rights reserved.</p>
     <p> E: Sjohnston@plces.com.au</p>
+    <p> P: 0417 887 009</p>
   </footer>
 </body>
 </html>
