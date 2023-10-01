@@ -610,5 +610,9 @@ input[type="submit"] {
     max-width: 98%; /* Also set a maximum width of 90% for smaller screens */
     align-content: center;
   }
+
+  .contact-intro h2 {
+    color: #000000;
+  }
 }
 
