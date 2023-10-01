@@ -593,6 +593,18 @@ input[type="submit"] {
     padding-bottom: 5px;
   }
 
+  .centered-form-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 75vh;
+    padding-bottom: 5px;
+  }
+
   .container {
     display: flex; /* Use flexbox to create a two-column layout */
     flex-wrap: wrap; /* Allow content to wrap to the next row */
