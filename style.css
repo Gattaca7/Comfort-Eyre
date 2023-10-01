@@ -53,6 +53,10 @@ a:visited {
   color: #000000;
 }
 
+.contact-intro a {
+  color: #000000;
+}
+
 /* Style links on hover to have a different color (if desired) */
 a:hover {
   color: #ffcc00; /* You can choose a different color for hover state */
