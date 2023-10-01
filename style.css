@@ -628,6 +628,7 @@ input[type="submit"] {
     flex-basis: 100%; /* Initially, each column takes up 100% of the container width */
     padding: 5px; /* Add some padding for spacing */
     box-sizing: border-box; /* Include padding in the column width */
+    margin-bottom: 10vh;
   }
 
   .right-column iframe {
