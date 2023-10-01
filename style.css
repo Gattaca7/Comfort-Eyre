@@ -1,275 +1,610 @@
-/* style.css */
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h2{
+  font-weight: 100;
+}
+
+p{
+  font-family: 'Courier', Courier, monospace;
+}
+
+.contact-intro{
+  text-align: center;
+}
+
+
+#ribbon {
+  height: 15vh;
+  background-color: #2764b4;
+  text-align: center;
+  color: #fff;
+}
+
+#ribbon1 {
+  height: 15vh;
+  background-color: #c3c9d1;
+  text-align: center;
+  color: #fff;
+}
+
+
+a {
+  color: white;
+  text-decoration: none; /* Optional: Remove underline on links */
+}
+
+/* Style visited links to be white */
+a:visited {
+  color: white;
+}
+
+/* Style links on hover to have a different color (if desired) */
+a:hover {
+  color: #ffcc00; /* You can choose a different color for hover state */
+}
+
+#about a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Optional: Remove underline on links */
+}
+
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style visited links to be white */
+b:visited {
+  color: rgb(0, 0, 0);
+}
+
+/* Style links on hover to have a different color (if desired) */
+b:hover {
+  color: #ffcc00; /* You can choose a different color for hover state */
+}
 
 header {
-    background-color: #4c89da; /* Dark blue color */
-    color: #ffffff;
-    padding: 10px;
-    content: center;
-    display: flex;
-    top: 0;
-    height: 12vh;
-    flex-direction: column;
-    align-items: center;
+  background-color: #2764b4; /* Dark blue color */
+  color: #ffffff;
+  padding: 10px;
+  content: center;
+  display: flex;
+  top: 0;
+  height: 12vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titleimage {
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+
+
+#about
+{
+  text-align: center;
+  font-size: 18px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#about h2
+{
     text-align: center;
+    font-size: 32px;
+    font-weight: 100;
   }
   
-  .titleimage {
-    min-height: fit-content;
-    min-width: fit-content;
-  }
-
-  #about
+#services h2
   {
     text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  nav ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  nav ul li a:hover:after,
-  nav ul li a.active:after {
-    transform: scaleX(1);
-  }
-  
-  section {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  #content {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    top: 14vh;
-    height: 75vh;
-    position: fixed;
+    font-size: 32px;
   }
 
-  img {
-    max-width: 100%;
-    display: block;
-    margin: 0;
+
+#services
+{
+  text-align: center;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover:after,
+nav ul li a.active:after {
+  transform: scaleX(1);
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+}
+
+#content {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  height: 75vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.overlay {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-image: url('big_image.jpg'); /* Set the image as the background */
+  background-size: cover; /* Cover the entire container without gaps */
+  background-position: center center; /* Center the background image */
+  height: 50vh; /* Set the height in viewport height units (adjust as needed) */
+  padding: 0; /* Remove padding */
+  opacity: 0.8;
+  display: flex; /* Use flexbox to center content vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+  z-index: -1;
+}
+
+.overlay-content {
+  position: relative; /* Ensure content stays within the overlay */
+  z-index: 1; /* Place content above the background image */
+  text-align: center;
+}
+
+.overlay h2 {
+  font-size: 2.5rem; /* 2.5 times the root font size */
+
+}
+
+.overlay p {
+  font-size: 1.8rem; /* 1.8 times the root font size */
+  margin-bottom: 0; /* Remove margin to prevent extra space */
+}
+
+footer.footer1 {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  color: #f2f2f2;
+  background-color: #323233;
+  padding: 0px;
+  text-align: center;
+}
+
+footer.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  color: #f2f2f2;
+  background-color: #323233;
+  padding: 12px;
+  text-align: center;
+}
+
+.service-card1 {
+  background-color: #d9d9d9; /* Set the default background color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  position: relative; /* Create a positioning context for pseudo-elements */
+  color: #000000;
+  background-image: url('nice_room.png'); /* Set the default background image */
+  background-size: cover; /* Ensure the image covers the card */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.service-card1 h3 {
+  color: white
+}
+
+.service-card1::before {
+  content: ""; /* Create an empty content pseudo-element */
+  position: absolute; /* Position it absolutely within the .service-card1 container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* White background color */
+  opacity: 0; /* Initially, the overlay is transparent */
+  z-index: 0; /* Place the overlay behind the content */
+  transition: opacity 0.3s; /* Add transition for smooth hover effect on the overlay */
+}
+
+.service-card1:hover::before {
+  opacity: 1; /* Change the overlay opacity on hover to make it white */
+  background-image: none; /* Remove the background image on hover */
+}
+
+.service-card1 h3 {
+  text-align: center;
+  margin: 0; /* Remove default margin for h3 */
+  position: absolute;
+  top: 50%; /* Center vertically within the card */
+  left: 50%; /* Center horizontally within the card */
+  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  z-index: 1; /* Place it above the overlay */
+  opacity: 1; /* Initially, the h3 is fully visible */
+  transition: opacity 0.3s; /* Add transition for smooth hover effect on the h3 */
+}
+
+.service-card1:hover h3 {
+  opacity: 0; /* Make the h3 element disappear on hover */
+}
+
+.service-card1 ul {
+  position: absolute;
+  top: 50%; /* Center the ul vertically within the card */
+  left: 50%; /* Center the ul horizontally within the card */
+  transform: translate(-50%, -50%); /* Center the ul both vertically and horizontally */
+  padding-left: 20px;
+  text-align: left; /* Center the text within the ul */
+  opacity: 0; /* Initially, hide the ul */
+  transition: opacity 0.3s; /* Add transition for smooth hover effect on the ul */
+}
+
+.service-card1:hover ul {
+  opacity: 1; /* Show the ul on hover */
+}
+
+.service-card1 ul li {
+  list-style-type: disc;
+}
+
+.service-card1:hover {
+  background-color: #f2f2f2; /* Change the background color on hover */
+  background-image: none; /* Remove the background image on hover */
+}
+
+.container {
+  display: flex; /* Use flexbox to create a two-column layout */
+  flex-wrap: wrap; /* Allow content to wrap to the next row */
+}
+
+.left-column {
+  flex-basis: 50%; /* When the container is at least 600px wide, set left column to 50% */
+}
+
+.right-column {
+  flex-basis: 50%; /* When the container is at least 600px wide, set right column to 50% */
+}
+
+
+.service-card2 {
+  background-color: #d9d9d9; /* Set the default background color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  position: relative; /* Create a positioning context for pseudo-elements */
+  color: #000000;
+  background-image: url('Solor.jpg'); /* Set the default background image */
+  background-size: cover; /* Ensure the image covers the card */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.service-card2 h3 {
+  color: white
+}
+
+.service-card2::before {
+  content: ""; /* Create an empty content pseudo-element */
+  position: absolute; /* Position it absolutely within the .service-card1 container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* White background color */
+  opacity: 0; /* Initially, the overlay is transparent */
+  z-index: 0; /* Place the overlay behind the content */
+  transition: opacity 0.3s; /* Add transition for smooth hover effect on the overlay */
+}
+
+.service-card2:hover::before {
+  opacity: 1; /* Change the overlay opacity on hover to make it white */
+  background-image: none; /* Remove the background image on hover */
+}
+
+.service-card2 h3 {
+  text-align: center;
+  margin: 0; /* Remove default margin for h3 */
+  position: absolute;
+  top: 50%; /* Center vertically within the card */
+  left: 50%; /* Center horizontally within the card */
+  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  z-index: 1; /* Place it above the overlay */
+  opacity: 1; /* Initially, the h3 is fully visible */
+  transition: opacity 0.3s; /* Add transition for smooth hover effect on the h3 */
+}
+
+.service-card2:hover h3 {
+  opacity: 0; /* Make the h3 element disappear on hover */
+}
+
+.service-card2 ul {
+  position: absolute;
+  top: 50%; /* Center the ul vertically within the card */
+  left: 50%; /* Center the ul horizontally within the card */
+  transform: translate(-50%, -50%); /* Center the ul both vertically and horizontally */
+  padding-left: 20px;
+  text-align: left; /* Center the text within the ul */
+  opacity: 0; /* Initially, hide the ul */
+  transition: opacity 0.3s; /* Add transition for smooth hover effect on the ul */
+}
+
+.service-card2:hover ul {
+  opacity: 1; /* Show the ul on hover */
+}
+
+.service-card2 ul li {
+  list-style-type: disc;
+}
+
+.service-card2:hover {
+  background-color: #f2f2f2; /* Change the background color on hover */
+  background-image: none; /* Remove the background image on hover */
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logoimage {
+  width: 30vh;
+}
+
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  height: 70vh;
+  padding-bottom: 5px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 70vw;
+  max-width: 600px;
+}
+
+#form h2 {
+  font-size: 32px;
+}
+
+  
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .service-container {
+    flex-wrap: nowrap;
   }
   
+  .service-card1 {
+    flex-basis: calc(50.00% - 20px);
+    margin-bottom: 0;
+    min-height: 0;
+    font-size: 20px;
+    min-height: 40vh;
+  }
+  
+  .service-card2 {
+    flex-basis: calc(50.00% - 20px);
+    margin-bottom: 0;
+    min-height: 0;
+    font-size: 20px;
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Adjust font sizes for mobile */
+  html {
+    font-size: 12px;
+  }
+
+  .service-card1 {
+    margin-bottom: 0;
+    font-size: 20px;
+    min-height: 30vh;
+    min-width: 81vw;
+  }
+  
+  .service-card2 {
+    margin-bottom: 0;
+    font-size: 20px;
+    min-height: 30vh;
+    width: 100%;
+  }
+
+
   .overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     color: white;
     text-align: center;
-    background-color: black;
-    padding: 15px;
+    background-image: url('Long_Image.jpg'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire container without gaps */
+    background-position: center center; /* Center the background image */
+    height: 45vh;
+    padding: 0; /* Remove padding */
     opacity: 0.8;
   }
   
+  .overlay-content {
+    position: relative;
+    z-index: 1;
+    padding: 15px; /* Add padding here to separate content from edges */
+  }
+  
+  /* ... (other CSS rules) ... */
+  
   .overlay h2 {
-    font-size: 2.5rem; /* 2.5 times the root font size */
-    font-weight: bold;
+    font-size: 1.9rem;
+  }
+
+  .overlay p {
+    font-size: 1.8rem;
+  }
+
+  .logoimage {
+    width: 100vw;
+    padding-bottom: 15px;
+  }
+
+  header{
+      height: 46vw;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #about
+{
+  text-align: center;
+  font-size: 15px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+  header nav ul li a {
+    font-size: 1.7rem; /* Increase the font size for mobile devices */
   }
 
   #services h2 {
     text-align: center;
-  }
-  
-  .overlay p {
-    font-size: 1.8rem; /* 1.8 times the root font size */
-  }
-
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #f2f2f2;
-    background-color: #4c89da;
-    padding: 12px;
-    text-align: center;
-  }
-  
-  .service-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .service-card {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-    flex-basis: calc(33.33% - 20px);
-  }
-  
-  .service-card:hover {
-    background-color: #d9d9d9;
-  }
-  
-  .service-card h3 {
-    margin-top: 0;
-  }
-  
-  .service-card ul {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-  
-  .service-card ul li {
-    list-style-type: disc;
-  }
-
-  .service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .service-card {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-    flex-basis: 100%;
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
-  
-  .logoimage {
-    width: 30vh;
+    font-size: 30px;
   }
 
   .centered-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 45vh;
+    padding-bottom: 5px;
+  }
+
+  .container {
+    display: flex; /* Use flexbox to create a two-column layout */
+    flex-wrap: wrap; /* Allow content to wrap to the next row */
   }
   
-  .form-row {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    width: 70vw;
-    max-width: 600px;
-  }
-    
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000000;
-    border-radius: 4px;
+  .left-column,
+  .right-column {
+    flex-basis: 100%; /* Initially, each column takes up 100% of the container width */
+    padding: 5px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in the column width */
   }
 
-  textarea {
-    height: 150px;
+  .right-column iframe {
+    width: 98%; /* Set the iframe width to 90% when the screen width is 600px or under */
+    max-width: 98%; /* Also set a maximum width of 90% for smaller screens */
+    align-content: center;
   }
-
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  @media (min-width: 900px) {
-    .service-container {
-      flex-wrap: nowrap;
-    }
-    
-    .service-card {
-      flex-basis: calc(33.33% - 20px);
-      margin-bottom: 0;
-      min-height: 0;
-      font-size: 20px;
-      min-height: 40vh;
-    }
-  }
-  
-  @media (max-width: 600px) and (max-height: 1500px) {
-    /* Adjust font sizes for mobile */
-    html {
-      font-size: 12px;
-    }
-
-    .titleimage {
-        content: url('Long_Image.jpg');
-        width: 600px;
-        align-content: center;
-      }
-  
-    .overlay h2 {
-      font-size: 1.9rem;
-    }
-  
-    .overlay p {
-      font-size: 1.8rem;
-    }
-
-    .logoimage {
-      width: 70vw;
-      padding-bottom: 15px;
-    }
-
-    .overlay {
-      width: 70%
-    }
-
-    header{
-        height: 36vw;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #content{
-        top: 36vw;
-    }
-
-    header nav ul li a {
-      font-size: 1.7rem; /* Increase the font size for mobile devices */
-    }
-
-    #services h2 {
-      text-align: center;
-    }
 }
 
