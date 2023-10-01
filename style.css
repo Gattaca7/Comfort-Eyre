@@ -19,7 +19,7 @@ p{
   font-family: 'Courier', Courier, monospace;
 }
 
-.contact-intro{
+.contact-intro {
   text-align: center;
 }
 
@@ -450,7 +450,7 @@ footer.footer {
   padding-bottom: 5px;
 }
 
-.centered-for-intro {
+.centered-form-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
