@@ -26,7 +26,7 @@ p{
 
 #ribbon {
   height: 15vh;
-  background-color: #2764b4;
+  background-color: #b42785;
   text-align: center;
   color: #fff;
 }
@@ -80,6 +80,10 @@ body {
 /* Style visited links to be white */
 b:visited {
   color: rgb(0, 0, 0);
+}
+
+b{
+  color: black;
 }
 
 /* Style links on hover to have a different color (if desired) */
