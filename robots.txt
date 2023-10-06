@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.portlincolncomforteyresolutions.com,au/sitemap.xml
+Sitemap: https://www.portlincolncomforteyresolutions.com.au/sitemap.xml
